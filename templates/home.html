@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+#set form to submit to a results page
+<form action="/results" method="POST">
+    <h1>1. select your city</h1>
+    <p>enter your city name</p>
+    <input type="text" name ="city" placeholder="please enter city">
+    <p>or your latitude and longitude</p>
+    <input type="text" name ="lat" placeholder="please enter latitude">
+    <input type="text" name ="lon" placeholder="please enter longitude ">
+
+    <input type="submit">
+</form>
+
+<img src="static/test_chart.png">
+
+{% endblock %}
